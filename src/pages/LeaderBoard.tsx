@@ -28,7 +28,7 @@ const LeaderBoard = () => {
           ))
         }
       </div>
-
+      <div className={'rounded-border'}></div>
       <div className='leaderboard-top-4'>
         {
           players.slice(3).map((player:Player,index:number)=>(
