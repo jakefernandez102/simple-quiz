@@ -5,7 +5,7 @@ import {reactQuestion} from '../data/questions'
 
 const LeaderBoard = () => {
 
-  const [players, setPlayers] = useState(JSON.parse(localStorage.getItem('players') || '[]'))
+  const [players] = useState(JSON.parse(localStorage.getItem('players') || '[]'))
 
   return (
     <div className='leaderboard-container'>

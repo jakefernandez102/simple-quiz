@@ -42,7 +42,7 @@ const Welcome = ({onNextClick,buttonText}:PageProps) => {
         <img 
           className='logo-img'
           src='/img/logo.png' 
-          alt="Logo image" />
+          alt="Logo" />
       </div>
 
       <div className='welcome-form'>

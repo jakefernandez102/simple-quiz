@@ -9,7 +9,7 @@ import TopInformation from '../components/molecules/TopInformation';
 
 const Quiz = ({onNextClick,buttonText}:PageProps) => {
 
-  const [currentPlayer, setCurrentPlayer] = useState({
+  const [currentPlayer] = useState({
     name:localStorage.getItem('name') || '',
     score:0
   })
@@ -22,7 +22,7 @@ const Quiz = ({onNextClick,buttonText}:PageProps) => {
     correctAnswers: 0,
     wrongAnswers: 0
   })
-  const [players, setPlayers] = useState(JSON.parse(localStorage.getItem('players') || '[]'))
+  const [players] = useState(JSON.parse(localStorage.getItem('players') || '[]'))
 
   const handleOnComplete = () => {
     alert('Time is up!');
